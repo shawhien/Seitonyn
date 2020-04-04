@@ -11,7 +11,7 @@ public class Mover : MonoBehaviour
     void Update()
     {
         //Raycast from camera to left mouse-click location
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(1))
         {
             MoveToCursor();
         }
