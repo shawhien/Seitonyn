@@ -10,11 +10,11 @@ public class Mover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Raycast from camera to left mouse-click location
-        if (Input.GetMouseButtonDown(1))
-        {
-            MoveToCursor();
-        }
+        // //Raycast from camera to left mouse-click location
+        // if (Input.GetMouseButtonDown(1))
+        // {
+        //     MoveToCursor();
+        // }
     }
     //implement click to move on left click
     private void MoveToCursor()
@@ -28,7 +28,13 @@ public class Mover : MonoBehaviour
         if (hasHit)
         {
             //https://docs.unity3d.com/ScriptReference/RaycastHit-point.html
-            GetComponent<NavMeshAgent>().destination = hit.point;
+            MoveTo(hit.point);
         }
+    }
+    //https://docs.unity3d.com/ScriptReference/Vector3.html
+    public void MoveTo(Vector3 destination)
+    {
+        //Destination is command given and can be applied to NavMeshAgent.
+        GetComponent<NavMeshAgent>().destination = destination;
     }
 }
