@@ -12,8 +12,8 @@ public class HeroController : MonoBehaviour {
         bool hasHit = Physics.Raycast(ray, out hit);
         if (hasHit)
         {
-            //https://docs.unity3d.com/ScriptReference/RaycastHit-point.html
-            MoveTo(hit.point);
+            //Reference for MoveTo in Mover.cs so HeroController knows what it is
+            Getcomponent<Mover>().moveTo(hit.point);
         }
     }
 }
