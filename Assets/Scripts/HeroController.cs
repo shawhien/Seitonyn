@@ -1,6 +1,16 @@
 using UnityEngine;
 
 public class HeroController : MonoBehaviour {
+
+    private void Update() {
+        //Raycast from camera to left mouse-click location
+        if (Input.GetMouseButtonDown(1))
+        {
+            MoveToCursor();
+        }
+    }
+
+
     //implement click to move on left click
     private void MoveToCursor()
     {
