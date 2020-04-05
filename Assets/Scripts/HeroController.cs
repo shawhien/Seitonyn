@@ -22,7 +22,7 @@ public class HeroController : MonoBehaviour {
         if (hasHit)
         {
             //Reference for MoveTo in Mover.cs so HeroController knows what it is
-            Getcomponent<Mover>().moveTo(hit.point);
+            GetComponent<Mover>().MoveTo(hit.point);
         }
     }
 }
