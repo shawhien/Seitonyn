@@ -5,12 +5,12 @@ public class HeroController : MonoBehaviour
 
     private void Update()
     {
-        //Raycast from camera to left mouse-click location
         MovementInteraction();
     }
 
     private void MovementInteraction()
     {
+        //Raycast from camera to left mouse-click location
         if (Input.GetMouseButtonDown(1))
         {
             MoveToCursor();
