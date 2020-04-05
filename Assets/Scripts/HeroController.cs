@@ -1,9 +1,16 @@
 using UnityEngine;
 
-public class HeroController : MonoBehaviour {
+public class HeroController : MonoBehaviour 
+{
 
-    private void Update() {
+    private void Update()
+    {
         //Raycast from camera to left mouse-click location
+        MovementInteraction();
+    }
+
+    private void MovementInteraction()
+    {
         if (Input.GetMouseButtonDown(1))
         {
             MoveToCursor();
@@ -21,7 +28,7 @@ public class HeroController : MonoBehaviour {
         bool hasHit = Physics.Raycast(ray, out hit);
         if (hasHit)
         {
-            //Reference for MoveTo in Mover.cs so HeroController knows what it is
+            //Be able to Raycast to components, not just terrain
             GetComponent<Mover>().MoveTo(hit.point);
         }
     }
