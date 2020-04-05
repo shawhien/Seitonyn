@@ -31,6 +31,7 @@ public class Mover : MonoBehaviour
             MoveTo(hit.point);
         }
     }
+    //Apply Vector3 that hit.point requires
     //https://docs.unity3d.com/ScriptReference/Vector3.html
     public void MoveTo(Vector3 destination)
     {
