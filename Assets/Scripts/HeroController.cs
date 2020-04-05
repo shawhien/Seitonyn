@@ -10,7 +10,6 @@ public class HeroController : MonoBehaviour {
         }
     }
 
-
     //implement click to move on left click
     private void MoveToCursor()
     {
