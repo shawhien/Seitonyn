@@ -12,7 +12,7 @@ public class HeroController : MonoBehaviour
 
     private void CombatInteraction()
     {
-        
+
     }
 
     private void MovementInteraction()
@@ -27,16 +27,19 @@ public class HeroController : MonoBehaviour
     //implement click to move on left click
     private void MoveToCursor()
     {
-        //create variable parameters for Raycast()
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         // https://docs.unity3d.com/ScriptReference/RaycastHit.html
         RaycastHit hit;
         //when hasHit is true, store position of raycast in (out) hit.
-        bool hasHit = Physics.Raycast(ray, out hit);
+        bool hasHit = Physics.Raycast(GetMouseRay(), out hit);
         if (hasHit)
         {
             //Be able to Raycast to components, not just terrain
             GetComponent<Mover>().MoveTo(hit.point);
         }
     }
+        private static Ray GetMouseRay()
+        {
+            return Camera.main.ScreenPointToRay(Input.mousePosition);
+        }
+    
 }
