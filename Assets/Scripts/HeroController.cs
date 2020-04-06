@@ -12,7 +12,8 @@ public class HeroController : MonoBehaviour
 
     private void CombatInteraction()
     {
-
+        RaycastHit[] hits = Physics.RaycastAll();
+        //RaycastHit.transform
     }
 
     private void MovementInteraction()
