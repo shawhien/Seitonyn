@@ -12,10 +12,15 @@ public class HeroController : MonoBehaviour
 
     private void CombatInteraction()
     {
-        RaycastHit[] hits = Physics.RaycastAll();
-        //RaycastHit.transform
-    }
+        //option 8/8. returns all the things that get hit in an array.
+        RaycastHit[] hits = Physics.RaycastAll(GetMouseRay());
+        //Return a list of each hit foreach hit
+        foreach (RaycastHit hit in hits)
+        {
+          
+        }
 
+    }
     private void MovementInteraction()
     {
         //Raycast from camera to left mouse-click location
