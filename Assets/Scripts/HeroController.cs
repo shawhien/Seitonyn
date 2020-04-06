@@ -5,14 +5,14 @@ public class HeroController : MonoBehaviour
 
     private void Update()
     {
-        //ctrl + . to automatically create function below it
+        //ctrl + . to automatically create function below
         CombatInteraction();
         MovementInteraction();
     }
 
     private void CombatInteraction()
     {
-        throw new NotImplementedException();
+        
     }
 
     private void MovementInteraction()

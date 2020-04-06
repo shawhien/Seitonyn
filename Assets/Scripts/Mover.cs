@@ -10,11 +10,7 @@ public class Mover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // //Raycast from camera to left mouse-click location
-        // if (Input.GetMouseButtonDown(1))
-        // {
-        //     MoveToCursor();
-        // }
+
     }
  
     //Apply Vector3 that hit.point requires
