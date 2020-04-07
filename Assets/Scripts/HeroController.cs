@@ -1,11 +1,9 @@
 using UnityEngine;
 using RPG.Movement;
-using RPG.Core;
-
 
 namespace RPG.Control
 {
-    public class HeroController : MonoBehaviour
+    public class PlayerController : MonoBehaviour
     {
 
         private void Update()
@@ -17,10 +15,14 @@ namespace RPG.Control
 
         private void CombatInteraction()
         {
-            //https://docs.unity3d.com/ScriptReference/Physics.RaycastAll.html
             //option 8/8. returns all the things that get hit in an array.
+            //https://docs.unity3d.com/ScriptReference/Physics.RaycastAll.html
             RaycastHit[] hits = Physics.RaycastAll(GetMouseRay());
             //Return a list of each hit foreach hit
+            foreach (RaycastHit hit in hits)
+            {
+                
+            }
         }
         private void MovementInteraction()
         {
