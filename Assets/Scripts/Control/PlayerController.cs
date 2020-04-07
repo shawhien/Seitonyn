@@ -23,6 +23,7 @@ namespace RPG.Control
             foreach (RaycastHit hit in hits)
             {
                 CombatTarget target = hit.transform.GetComponent<CombatTarget>();
+
                 //if target is null, then skip this part and move on with loop (continue)
                 if (target == null) continue;
                 {
