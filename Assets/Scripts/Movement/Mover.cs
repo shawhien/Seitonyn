@@ -27,5 +27,11 @@ namespace RPG.Movement
     {
         //Get the velocity from the NavMeshAgent
         Vector3 velocity = GetComponent<NavMeshAgent>().velocity;
+
+        // https://docs.unity3d.com/ScriptReference/Transform.InverseTransformDirection.html
+        //Take the global velocity and make it local. 
+        //No matter where you are in the world, make the velocity local so the animator doesn't get confused.
+        //Global values are irrelevant to the animator and returns an error
+        Vector3 localVelocity = transform.InverseTransformDirection(velocity);
     }
 }
