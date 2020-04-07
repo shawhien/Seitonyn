@@ -25,6 +25,7 @@ namespace RPG.Movement
     }
     private void UpdateAnimator()
     {
+        //Get the velocity from the NavMeshAgent
         Vector3 velocity = GetComponent<NavMeshAgent>().velocity;
     }
 }
