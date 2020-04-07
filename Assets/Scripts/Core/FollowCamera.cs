@@ -17,5 +17,3 @@ namespace RPG.Core
         }
     }
 }
-    
-

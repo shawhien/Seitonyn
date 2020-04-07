@@ -1,10 +1,10 @@
-using UnityEngine;
+﻿using UnityEngine;
 using RPG.Movement;
 using RPG.Combat;
 
 namespace RPG.Control
 {
-    public class HeroController : MonoBehaviour
+    public class PlayerController : MonoBehaviour
     {
 
         private void Update()
@@ -14,7 +14,7 @@ namespace RPG.Control
             MovementInteraction();
         }
 
-        private void CombatInteraction() 
+        private void CombatInteraction()
         {
             //option 8/8. returns all the things that get hit in an array.
             //https://docs.unity3d.com/ScriptReference/Physics.RaycastAll.html
@@ -22,7 +22,7 @@ namespace RPG.Control
             //Return a list of each hit foreach hit
             foreach (RaycastHit hit in hits)
             {
-               CombatTarget target = hit.transform.GetComponent<CombatTarget>();
+                CombatTarget target = hit.transform.GetComponent<CombatTarget>();
                 //if target is null, then skip this part and move on with loop (continue)
                 if (target == null) continue;
                 {
@@ -48,7 +48,7 @@ namespace RPG.Control
         //implement click to move on left click
         private void MoveToCursor()
         {
-            
+
             //https://docs.unity3d.com/ScriptReference/RaycastHit.html
             RaycastHit hit;
             //when hasHit is true, store position of raycast in (out) hit.
