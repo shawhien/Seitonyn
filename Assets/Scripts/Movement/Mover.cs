@@ -12,7 +12,7 @@ namespace RPG.Movement
         // Update is called once per frame
         void Update()
         {
-       
+            UpdateAnimator();
         }
 
         //Apply Vector3 that hit.point requires
@@ -22,5 +22,9 @@ namespace RPG.Movement
             //Destination is command given and can be applied to NavMeshAgent.
             GetComponent<NavMeshAgent>().destination = destination;
         }
+    }
+    private void UpdateAnimator()
+    {
+        
     }
 }
