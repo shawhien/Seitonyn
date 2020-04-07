@@ -1,7 +1,6 @@
 using UnityEngine;
 using RPG.Movement;
-using RPG.Core;
-
+using RPG.Combat;
 
 namespace RPG.Control
 {
@@ -15,13 +14,28 @@ namespace RPG.Control
             MovementInteraction();
         }
 
-        private void CombatInteraction()
+        private void CombatInteraction() 
         {
-            //https://docs.unity3d.com/ScriptReference/Physics.RaycastAll.html
             //option 8/8. returns all the things that get hit in an array.
+            //https://docs.unity3d.com/ScriptReference/Physics.RaycastAll.html
             RaycastHit[] hits = Physics.RaycastAll(GetMouseRay());
             //Return a list of each hit foreach hit
+            foreach (RaycastHit hit in hits)
+            {
+               CombatTarget target = hit.transform.GetComponent<CombatTarget>();
+                //if target is null, then skip this part and move on with loop (continue)
+                if (target == null) continue;
+                {
+
+                }
+                //only happens if target is NOT null
+                if (Input.GetMouseButtonDown(1))
+                {
+                    GetComponent<Fighter>().Attack(target);
+                }
+            }
         }
+
         private void MovementInteraction()
         {
             //Raycast from camera to left mouse-click location

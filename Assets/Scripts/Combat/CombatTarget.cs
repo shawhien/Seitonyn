@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace RPG.Combat
 {
-    public class AttackTarget : MonoBehaviour
+    public class CombatTarget : MonoBehaviour
     {
 
     }
