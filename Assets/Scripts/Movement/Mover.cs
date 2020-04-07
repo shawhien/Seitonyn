@@ -22,15 +22,22 @@ namespace RPG.Movement
             //Destination is command given and can be applied to NavMeshAgent.
             GetComponent<NavMeshAgent>().destination = destination;
         }
-    }
-    private void UpdateAnimator()
-    {
-        //Get the velocity from the NavMeshAgent
-        Vector3 velocity = GetComponent<NavMeshAgent>().velocity;
+        private void UpdateAnimator()
+        {
+            //Get the velocity from NavMeshAgent
+            Vector3 velocity = GetComponent<NavMeshAgent>().velocity;
 
-        //https://docs.unity3d.com/ScriptReference/Transform.InverseTransformDirection.html
-        //https://answers.unity.com/questions/506740/i-need-help-understanding-transformdirection.html
-        //Global values are irrelevant to the animator. Make it local.
-        Vector3 localVelocity = transform.InverseTransformDirection(velocity);
-    }
+            //https://docs.unity3d.com/ScriptReference/Transform.InverseTransformDirection.html
+            //https://answers.unity.com/questions/506740/i-need-help-understanding-transformdirection.html
+            //Global values are irrelevant to the animator. Make it local.
+
+            Vector3 localVelocity = transform.InverseTransformDirection(velocity);
+
+            //Only moving in Z direction, set that number equal to a variable.
+            float speed = localVelocity.z;
+
+            //Apply all of this to IdleWalkRun in the animator on Unity
+            GetComponent<Animator>().SetFloat("IdleWalkRun", speed);
+        }
+    }      
 }
