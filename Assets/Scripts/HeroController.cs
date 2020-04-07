@@ -1,5 +1,6 @@
 using UnityEngine;
 using RPG.Movement;
+using RPG.Combat;
 
 namespace RPG.Control
 {
@@ -21,7 +22,7 @@ namespace RPG.Control
             //Return a list of each hit foreach hit
             foreach (RaycastHit hit in hits)
             {
-                
+                hit.transform.GetComponent<AttackTarget>();
             }
         }
         private void MovementInteraction()
