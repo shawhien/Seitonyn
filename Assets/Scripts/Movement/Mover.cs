@@ -12,7 +12,7 @@ namespace RPG.Movement
         // Update is called once per frame
         void Update()
         {
-
+       
         }
 
         //Apply Vector3 that hit.point requires
