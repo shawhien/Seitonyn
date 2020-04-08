@@ -22,6 +22,7 @@ namespace RPG.Movement
             //Destination is command given and can be applied to NavMeshAgent.
             GetComponent<NavMeshAgent>().destination = destination;
         }
+
         private void UpdateAnimator()
         {
             //Get the velocity from NavMeshAgent

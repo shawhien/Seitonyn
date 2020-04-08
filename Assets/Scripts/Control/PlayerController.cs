@@ -6,7 +6,7 @@ namespace RPG.Control
 {
     public class PlayerController : MonoBehaviour
     {
-
+        //Update functions every frame.(Created by Unity)
         private void Update()
         {
             //ctrl + . to automatically create function below
