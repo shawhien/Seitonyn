@@ -5,11 +5,10 @@ namespace RPG.Combat
 {
     public class Fighter : MonoBehaviour
     {
-        //Be able to set range from target in Player Inspector in Unity
-        //https://answers.unity.com/questions/1455929/how-can-i-use-the-range-attribute-on-a-serializabl.html
-        [SerializeField] float weaponRange = 2f;
+        //Set range of character from target
+        //[SerializeField] float weaponRange = 2f;
 
-        //Transform enemy;
+        //Transform target;
 
         //public void Update()
         //{
