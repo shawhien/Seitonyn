@@ -9,12 +9,18 @@ namespace RPG.Combat
         //https://answers.unity.com/questions/282128/what-does-0f-and-5f-mean.html
         [SerializeField] float range = 2f;
         [SerializeField] float weaponDamage = 5f;
+        [SerializeField] float timeBetweenAttacks = 1f;
 
         Transform target;
+        float timeSinceAttack = 0;
+
 
         //Update to be able to move to/attack existing targets
         public void Update()
         {
+            //https://docs.unity3d.com/ScriptReference/Time-deltaTime.html
+            //https://answers.unity.com/questions/296336/timedeltatime.html
+            timeSinceAttack += timeSinceAttack.deltaTime;
             //Check the distance between player position
             bool isInRange = Vector3.Distance(transform.position, target.position) < range;
            //If target exists, move to that target
