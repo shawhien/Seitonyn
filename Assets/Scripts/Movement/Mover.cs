@@ -22,6 +22,11 @@ namespace RPG.Movement
             //Destination is command given and can be applied to NavMeshAgent.
             GetComponent<NavMeshAgent>().destination = destination;
         }
+        //Stop the NavMeshAgent so that Player can stop before the object
+        public void Stop()
+        { 
+        
+        }
 
         private void UpdateAnimator()
         {
