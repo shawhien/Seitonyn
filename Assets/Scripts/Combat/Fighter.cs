@@ -8,6 +8,7 @@ namespace RPG.Combat
         //Set range of character to 2m from target within Unity
         //https://answers.unity.com/questions/282128/what-does-0f-and-5f-mean.html
         [SerializeField] float range = 2f;
+        [SerializeField] float weaponDamage = 5f;
 
         Transform target;
 
@@ -25,10 +26,18 @@ namespace RPG.Combat
             {
                 GetComponent<Mover>().Stop();
                 GetComponent<Animator>().SetTrigger("attack");
+                Hit();
 
             }
-
         }
+
+        //Animation for hitting
+        public void Hit()
+        {
+            Health healthComponent = target.GetComponent<Health>();
+            healthComponent.TakeDamage(weaponDamage);
+        }
+
         //Function to have player get in range of target
         private bool GetInRange()
         {
@@ -50,11 +59,6 @@ namespace RPG.Combat
         //{
         //    target = null;
         //}
-
-        //Animation for hitting
-        public void Hit()
-        {
-
-        }
     }
+
 }
