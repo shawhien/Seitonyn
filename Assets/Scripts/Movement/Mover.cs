@@ -21,11 +21,15 @@ namespace RPG.Movement
         {
             //Destination is command given and can be applied to NavMeshAgent.
             GetComponent<NavMeshAgent>().destination = destination;
+            GetComponent<NavMeshAgent>().isStopped = false;
         }
+
         //Stop the NavMeshAgent so that Player can stop before the object
         public void Stop()
-        { 
-        
+        {
+            //https://docs.unity3d.com/ScriptReference/AI.NavMeshAgent-isStopped.html
+            //https://answers.unity.com/questions/1355590/navmeshagentisstopped-true-but-is-still-moving.html
+            GetComponent<NavMeshAgent>().isStopped = true;
         }
 
         private void UpdateAnimator()
