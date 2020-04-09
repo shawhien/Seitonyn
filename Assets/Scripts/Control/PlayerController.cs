@@ -10,11 +10,14 @@ namespace RPG.Control
         private void Update()
         {
             //ctrl + . to automatically create function below
-            CombatInteraction();
+            if (CombatInteraction())
+            {
+                return;
+            }
             MovementInteraction();
         }
 
-        private void CombatInteraction()
+        private bool CombatInteraction()
         {
             //option 8/8. returns all the things that get hit in an array.
             //https://docs.unity3d.com/ScriptReference/Physics.RaycastAll.html
@@ -34,7 +37,11 @@ namespace RPG.Control
                 {
                     GetComponent<Fighter>().Attack(target);
                 }
+                //In combat, trigger combat interactions
+                return true;                  
             }
+            //not in combat. No targets to itneract with
+            return false;
         }
 
         private void MovementInteraction()

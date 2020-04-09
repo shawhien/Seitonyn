@@ -6,7 +6,7 @@ namespace RPG.Combat
     public class Health: MonoBehaviour
     {
         //set initial health to 100 float.
-        [SerializeField] float health = 100f;
+        [SerializeField] float health = 20f;
 
         public void TakeDamage(float damage)
         {

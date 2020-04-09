@@ -112,6 +112,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 2
+  weaponDamage: 5
+  timeBetweenAttacks: 0.8
 --- !u!195 &594977078
 NavMeshAgent:
   m_ObjectHideFlags: 0

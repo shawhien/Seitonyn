@@ -20,19 +20,34 @@ namespace RPG.Combat
         {
             //https://docs.unity3d.com/ScriptReference/Time-deltaTime.html
             //https://answers.unity.com/questions/296336/timedeltatime.html
-            timeSinceAttack += timeSinceAttack.deltaTime;
-            //Check the distance between player position
-            bool isInRange = Vector3.Distance(transform.position, target.position) < range;
+            timeSinceAttack += Time.deltaTime;
            //If target exists, move to that target
-           if (target != null && !isInRange)
+           if (target == null)
+            {
+                return;
+            }
+
+           if (!GetInRange())
             {
                 GetComponent<Mover>().MoveTo(target.position);
             }
             else
             {
                 GetComponent<Mover>().Stop();
-                GetComponent<Animator>().SetTrigger("attack");
+                AttackTime();
                 Hit();
+
+            }
+        }
+
+        //Space out attacks so we don't get 200 console logs of damage in 3 seconds.
+        private void AttackTime()
+        {
+            //https://answers.unity.com/questions/979929/adding-a-cooldown-time-to-a-attack.html
+            if (timeSinceAttack > timeBetweenAttacks)
+            {
+                GetComponent<Animator>().SetTrigger("attack");
+                timeSinceAttack = 0;
 
             }
         }
@@ -44,19 +59,19 @@ namespace RPG.Combat
             healthComponent.TakeDamage(weaponDamage);
         }
 
-        //Function to have player get in range of target
+        //Function to check player range of target
         private bool GetInRange()
         {
             //https://answers.unity.com/questions/1288414/move-player-to-exact-vector3-coordinates-beginner.html
             return Vector3.Distance(transform.position, target.position) < range;
         }
 
-        public void Attack(CombatTarget combattarget)
+        public void Attack(CombatTarget combatTarget)
         {
             print("Your mother was a hamster and your father smelt of elderberries.");
 
             //Set enemy to combat target
-            target = combattarget.transform;
+            target = combatTarget.transform;
         }
 
         ////Stop attacking when click to move (WiP)
