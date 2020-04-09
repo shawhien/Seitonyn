@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using RPG.Combat;
+using RPG.Core;
 
 namespace RPG.Movement
 {
@@ -16,6 +17,15 @@ namespace RPG.Movement
             UpdateAnimator();
         }
 
+        public void StartAction(Vector3 destination)
+        {
+            //Same as Fighter.cs
+            //Start action, cancel when appropriate, and move to the destination that is clicked
+            GetComponent<Actions>().StartAction(this);
+            GetComponent<Fighter>().Cancel();
+            MoveTo(destination);
+        }
+
         //Apply Vector3 that hit.point requires
         //https://docs.unity3d.com/ScriptReference/Vector3.html
         public void MoveTo(Vector3 destination)
@@ -26,7 +36,7 @@ namespace RPG.Movement
         }
 
         //Stop the NavMeshAgent so that Player can stop before the object
-        public void Stop()
+        public void Cancel()
         {
             //https://docs.unity3d.com/ScriptReference/AI.NavMeshAgent-isStopped.html
             //https://answers.unity.com/questions/1355590/navmeshagentisstopped-true-but-is-still-moving.html

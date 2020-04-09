@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using RPG.Movement;
+using RPG.Core;
 
 namespace RPG.Combat
 {
@@ -33,7 +34,7 @@ namespace RPG.Combat
             }
             else
             {
-                GetComponent<Mover>().Stop();
+                GetComponent<Mover>().Cancel();
                 AttackTime();
             }
         }
@@ -70,6 +71,9 @@ namespace RPG.Combat
 
             //Set enemy to combat target
             target = combatTarget.transform;
+            //Adding new Actions component
+            //https://coding.abel.nu/2013/02/this-in-javascript-vs-c/
+            GetComponent<Actions>().StartAction(this);
         }
 
         //Stop attacking when click to move (WiP)
