@@ -35,8 +35,6 @@ namespace RPG.Combat
             {
                 GetComponent<Mover>().Stop();
                 AttackTime();
-                Hit();
-
             }
         }
 
@@ -74,12 +72,12 @@ namespace RPG.Combat
             target = combatTarget.transform;
         }
 
-        ////Stop attacking when click to move (WiP)
-        ////https://stackoverflow.com/questions/38057082/attack-timer-stops-after-killing-enemy-when-attack-script-loose-target-unity
-        //public void Cancel()
-        //{
-        //    target = null;
-        //}
+        //Stop attacking when click to move (WiP)
+        //https://stackoverflow.com/questions/38057082/attack-timer-stops-after-killing-enemy-when-attack-script-loose-target-unity
+        public void Cancel()
+        {
+            target = null;
+        }
     }
 
 }
