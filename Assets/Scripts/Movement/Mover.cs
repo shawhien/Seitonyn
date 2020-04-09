@@ -5,9 +5,12 @@ using UnityEngine.AI;
 using RPG.Combat;
 using RPG.Core;
 
+//CHECK THIS FOR EVERYTHING: http://gameprogrammingpatterns.com/contents.html
+
 namespace RPG.Movement
 {
-    public class Mover : MonoBehaviour
+    //include InterfaceAction as well
+    public class Mover : MonoBehaviour, IAction
     {
         [SerializeField] Transform target;
 
@@ -22,8 +25,8 @@ namespace RPG.Movement
             //Same as Fighter.cs
             //Start action, cancel when appropriate, and move to the destination that is clicked
             GetComponent<Actions>().StartAction(this);
-            GetComponent<Fighter>().Cancel();
             MoveTo(destination);
+
         }
 
         //Apply Vector3 that hit.point requires
@@ -32,12 +35,14 @@ namespace RPG.Movement
         {
             //Destination is command given and can be applied to NavMeshAgent.
             GetComponent<NavMeshAgent>().destination = destination;
+
             GetComponent<NavMeshAgent>().isStopped = false;
         }
 
-        //Stop the NavMeshAgent so that Player can stop before the object
+        //Requirement of Interface (see InterfaceAction.cs)
         public void Cancel()
         {
+            //Stop the NavMeshAgent so that Player can stop before the object
             //https://docs.unity3d.com/ScriptReference/AI.NavMeshAgent-isStopped.html
             //https://answers.unity.com/questions/1355590/navmeshagentisstopped-true-but-is-still-moving.html
             GetComponent<NavMeshAgent>().isStopped = true;

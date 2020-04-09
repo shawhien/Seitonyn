@@ -6,22 +6,29 @@ namespace RPG.Core
 {
     //Got a lot of help for this section
     //Use Substitution Principle to remove dependencies, thus reducing chance of bugs.
+    //http://gameprogrammingpatterns.com/component.html
     public class Actions : MonoBehaviour
     {
 
-        MonoBehaviour currentAction;
+        IAction currentAction;
 
         //Cancel the movement when combat starts, and cancel combat when movement starts
-        public void StartAction(MonoBehaviour action)
+        public void StartAction(IAction action)
         {
-            print("Cancelling" + currentAction);
-            currentAction = action;
-        
-        }
+            //If current action is happening, no need to cancel. Just keep going.
+            if (currentAction == action)
+            {
+                return;
+            }
+            //If current action is not null, then cancel action.
+            if (currentAction != null)
+            {
 
-        // Update is called once per frame
-        void Update()
-        {
+                currentAction.Cancel();
+
+            }
+
+            currentAction = action;
         
         }
     }

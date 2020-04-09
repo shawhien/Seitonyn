@@ -3,8 +3,9 @@ using RPG.Movement;
 using RPG.Core;
 
 namespace RPG.Combat
-{
-    public class Fighter : MonoBehaviour
+{   
+    //Include InterfaceAction as well
+    public class Fighter : MonoBehaviour, IAction
     {
         //Set range of character to 2m from target within Unity
         //https://answers.unity.com/questions/282128/what-does-0f-and-5f-mean.html
@@ -69,14 +70,14 @@ namespace RPG.Combat
         {
             print("Your mother was a hamster and your father smelt of elderberries.");
 
-            //Set enemy to combat target
-            target = combatTarget.transform;
             //Adding new Actions component
             //https://coding.abel.nu/2013/02/this-in-javascript-vs-c/
             GetComponent<Actions>().StartAction(this);
+            //Set enemy to combat target
+            target = combatTarget.transform;
         }
 
-        //Stop attacking when click to move (WiP)
+        //Stop attacking when click to move
         //https://stackoverflow.com/questions/38057082/attack-timer-stops-after-killing-enemy-when-attack-script-loose-target-unity
         public void Cancel()
         {

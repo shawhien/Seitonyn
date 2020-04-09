@@ -31,9 +31,9 @@ namespace RPG.Control
                 CombatTarget target = hit.transform.GetComponent<CombatTarget>();
 
                 //if target is null, then skip this part and move on with loop (continue)
-                if (target == null) continue;
+                if (target == null) 
                 {
-
+                    continue;
                 }
                 //only happens if target is NOT null
                 if (Input.GetMouseButtonDown(1))
@@ -60,7 +60,7 @@ namespace RPG.Control
                 if (Input.GetMouseButtonDown(1))
                 {
                 //Be able to Raycast to components, not just terrain
-                GetComponent<Mover>().MoveTo(hit.point);
+                GetComponent<Mover>().StartAction(hit.point);
                 }
                 return true;
             }
