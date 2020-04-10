@@ -1184,7 +1184,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 193682, guid: aea27ca7a35042c419065833e8daf224, type: 3}
       propertyPath: m_Name
-      value: Nick Quandt (Wizard w/ Broom)
+      value: Nick Quandt (Wizard w/ Broom. It's NOT a spear)
       objectReference: {fileID: 0}
     - target: {fileID: 447366, guid: aea27ca7a35042c419065833e8daf224, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1196,7 +1196,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 455556, guid: aea27ca7a35042c419065833e8daf224, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 49.59993
+      value: 49.6
       objectReference: {fileID: 0}
     - target: {fileID: 455556, guid: aea27ca7a35042c419065833e8daf224, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1204,7 +1204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 455556, guid: aea27ca7a35042c419065833e8daf224, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -145.15604
+      value: -145.13
       objectReference: {fileID: 0}
     - target: {fileID: 455556, guid: aea27ca7a35042c419065833e8daf224, type: 3}
       propertyPath: m_LocalRotation.x
