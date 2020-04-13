@@ -5,7 +5,7 @@ using UnityEngine.AI;
 using RPG.Combat;
 using RPG.Core;
 
-//CHECK THIS FOR EVERYTHING: http://gameprogrammingpatterns.com/contents.html
+//CHECK THIS: http://gameprogrammingpatterns.com/contents.html
 
 namespace RPG.Movement
 {
