@@ -1,7 +1,7 @@
 # Seitonyn
 
 ### Overview:
-- Seitonyn is an RPG game built with Unity that will allow players to control a character, traverse across the map, and fight enemies with a basic AI. The game will feature a similar playstyle to Pillars of Eternity.
+- Seitonyn is an RPG game built with Unity that will allow players to control a character, traverse across the map, and fight enemies. The game will feature a similar playstyle to Pillars of Eternity.
 
 ### Controls:
 - Right click to move
