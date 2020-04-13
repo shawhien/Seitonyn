@@ -3,7 +3,12 @@
 ### Overview:
 - Seitonyn is an RPG game built with Unity that will allow players to control a character, traverse across the map, and fight enemies with a basic AI. The game will feature a similar playstyle to Pillars of Eternity.
 
+### Controls:
+- Right click to move
+- Right click to attack
+
 ### User Story:
+
 **Molly Moon: Student**
 
 - Molly is bored at home during quarantine and has run out of things to do. UNTITLED will help her stay out of her head and not have anxiety about what is going on in the outside world. 
