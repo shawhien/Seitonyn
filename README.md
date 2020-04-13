@@ -1,9 +1,9 @@
-#Seitonyn
+# Seitonyn
 
-###Overview:
+### Overview:
 - Seitonyn is an RPG game built with Unity that will allow players to control a character, traverse across the map, and fight enemies with a basic AI. The game will feature a similar playstyle to Pillars of Eternity.
 
-###User Story:
+### User Story:
 **Molly Moon: Student**
 
 - Molly is bored at home during quarantine and has run out of things to do. UNTITLED will help her stay out of her head and not have anxiety about what is going on in the outside world. 
@@ -26,20 +26,20 @@ Dougie meant to say, "One BILLION dollars!"
 - Sarah Anna is an instructor at GA that is looking to approve an *amazing* idea even though the developer knows  that he has way too many stretch goals. The developer promises to take it one step at a time, but still put out a great product worthy of Project 4. After hearing about it, she realized UNTITLED is exactly what she was looking for and approves it in a heartbeat!
 
 
-###Wireframes:
+### Wireframes:
 ![wireframe](wireframe.png)
 
-###Proposed Architecture:
+### Proposed Architecture:
 - Unity is used for development.
 - C# is the main programming language for functionality.
 
-###MVP:
+### MVP:
 - Basic sandbox map
 - Controllable character that will move with mouse click.
 - Apply basic models for enemies within Unity 
 - Character will be able to run into enemies and die upon collision. 
 
-###Stretch Goals:
+### Stretch Goals:
 - Engage enemies and have the enemies attack them back with minimal simple AI.
 - Add simple abilities/healing potion
 - Level up 
