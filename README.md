@@ -32,7 +32,7 @@ Dougie meant to say, "One BILLION dollars!"
 
 
 ### Wireframes:
-![wireframe](wireframe.png)
+
 
 ### Proposed Architecture:
 - Unity is used for development.
