@@ -11,16 +11,16 @@
 
 **Molly Moon: Student**
 
-- Molly is bored at home during quarantine and has run out of things to do. UNTITLED will help her stay out of her head and not have anxiety about what is going on in the outside world. 
+- Molly is bored at home during quarantine and has run out of things to do. Seitonyn will help her stay out of her head and not have anxiety about what is going on in the outside world. 
 
 **Chad Chadson: A REAL Chad**
 
-- Chad here has no experience with RPGs but is curious about picking them up. He wants to start somewhere simple before diving into more complicated and intricate titles, so he decides to pick up UNTITLED.
+- Chad here has no experience with RPGs but is curious about picking them up. He wants to start somewhere simple before diving into more complicated and intricate titles, so he decides to pick up Seitonyn.
 
 
 **Dougie 'Dr. Evil' Powers**
 
-- Dougie wants to support indie game developers that are trying to make a name for themselves. He is looking for the next hot thing, and stumbles across UNTITLED to see if it is worthy of taking further and investing into. After much deliberation, he decides it is and invests...one MILLION dollars.
+- Dougie wants to support indie game developers that are trying to make a name for themselves. He is looking for the next hot thing, and stumbles across Seitonyn to see if it is worthy of taking further and investing into. After much deliberation, he decides it is and invests...one MILLION dollars.
 
 - JK that's not a lot of money. 
 
@@ -28,7 +28,7 @@
 
 **Sarah Anna: Esteemed SEI Instructor**
 
-- Sarah Anna is an instructor at GA that is looking to approve an *amazing* idea even though the developer knows  that he has way too many stretch goals. The developer promises to take it one step at a time, but still put out a great product worthy of Project 4. After hearing about it, she realized UNTITLED is exactly what she was looking for and approves it in a heartbeat!
+- Sarah Anna is an instructor at GA that is looking to approve an *amazing* idea even though the developer knows  that he has way too many stretch goals. The developer promises to take it one step at a time, but still put out a great product worthy of Project 4. After hearing about it, she realized Seitonyn is exactly what she was looking for and approves it in a heartbeat!
 
 
 ### Wireframes:
