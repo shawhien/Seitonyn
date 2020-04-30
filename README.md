@@ -22,9 +22,9 @@
 
 - Dougie wants to support indie game developers that are trying to make a name for themselves. He is looking for the next hot thing, and stumbles across Seitonyn to see if it is worthy of taking further and investing into. After much deliberation, he decides it is and invests...one MILLION dollars.
 
-JK that's not a lot of money. 
+  JK that's not a lot of money. 
 
-Dougie meant to say, "One BILLION dollars!"
+  Dougie meant to say, "One BILLION dollars!"
 
 **Sarah Anna: Esteemed SEI Instructor**
 
