@@ -28,7 +28,7 @@
 
 **Sarah Anna: Esteemed SEI Instructor**
 
-- Sarah Anna is an instructor at GA that is looking to approve an *amazing* idea even though the developer knows  that he has way too many stretch goals. The developer promises to take it one step at a time, but still put out a great product worthy of Project 4. After hearing about it, she realized Seitonyn is exactly what she was looking for and approves it in a heartbeat!
+- Sarah Anna is an instructor at GA that is looking to approve an *amazing* idea even though the developer knows  that he has way too many stretch goals. The developer promises to take it one step at a time, but still put out a great product worthy of Project 4. After hearing about it, she realizes Seitonyn is exactly what she was looking for and approves it in a heartbeat!
 
 
 ### Wireframes:
