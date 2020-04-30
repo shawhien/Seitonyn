@@ -22,9 +22,9 @@
 
 - Dougie wants to support indie game developers that are trying to make a name for themselves. He is looking for the next hot thing, and stumbles across Seitonyn to see if it is worthy of taking further and investing into. After much deliberation, he decides it is and invests...one MILLION dollars.
 
-- JK that's not a lot of money. 
+JK that's not a lot of money. 
 
-- Dougie meant to say, "One BILLION dollars!"
+Dougie meant to say, "One BILLION dollars!"
 
 **Sarah Anna: Esteemed SEI Instructor**
 
@@ -42,7 +42,7 @@
 - Basic sandbox map
 - Controllable character that will move with mouse click.
 - Apply basic models for enemies within Unity 
-- Character will be able to run into enemies and die upon collision. 
+- Character will be able to engage enemies and deal damage. 
 
 ### Stretch Goals:
 - Engage enemies and have the enemies attack them back with minimal simple AI.
